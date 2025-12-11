@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                           ),
 
                           const SizedBox(height: 30),
-                          
+
                           // Status Card
                           Container(
                             padding: const EdgeInsets.all(16),
@@ -143,6 +143,7 @@ class HomeScreen extends StatelessWidget {
                               ],
                             ),
                           ),
+
 
                           const SizedBox(height: 30),
 
