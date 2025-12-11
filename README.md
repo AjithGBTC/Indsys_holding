@@ -1,16 +1,35 @@
 # indsys_holding
 
-A new Flutter project.
+**Authentication**
+Firebase Email/Password login
+Session persistence using shared_preferences
+Auto-login until user logs out
 
-## Getting Started
+**Background Location Tracking**
+Background tracking powered by flutter_foreground_task
+Uses geolocator for accurate GPS data
+Collects:
+latitude
+longitude
+timestamp
+date
+user email
 
-This project is a starting point for a Flutter application.
+Writes entries to SQLite database (sqflite)
+Tracking runs even if the app is minimized or closed
 
-A few resources to get you started if this is your first Flutter project:
+**Timeline Visualization**
+Google Maps integration using google_maps_flutter
+Draws route polyline for selected date
+Start/End markers
+Date picker to select timeline day
+Loads persisted location data from local database
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Core Architecture**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+State Management: Provider
+Local Database: SQLite
+Background Execution: Foreground service
+Auth: Firebase Authentication
+Session Storage: SharedPreferences
+Location: Geolocator
